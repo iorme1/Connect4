@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connect 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <navbar class="navbar navbar-expand-sm navbar-light bg-light my-nav">
+      <a class="navbar-brand" href="#">Connect 4</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://en.wikipedia.org/wiki/Connect_Four">Rules</a></li>
+      </ul>
+    </navbar>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 start">
+          <button class="start-btn btn btn-primary">Start Game</button>
+        </div>
+      </div>
+      <div class="row game-row">
+        <div class="player1-container col-md-2 col-xs-4">
+          <p class="player1 hide">Player 1</p>
+        </div>
+
+        <table class="board col-md-8 col-xs-12">
+            <tr class="row-1">
+              <td class="drop" data-col="0"></td>
+              <td class="drop" data-col="1"></td>
+              <td class="drop" data-col="2"></td>
+              <td class="drop" data-col="3"></td>
+              <td class="drop" data-col="4"></td>
+              <td class="drop" data-col="5"></td>
+              <td class="drop" data-col="6"></td>
+            </tr>
+
+          <tr class="row-2">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr class="row-3">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr class="row-4">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr class="row-5">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr class="row-6">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </table>
+
+        <div class="player2-container col-md-2 col-xs-4">
+          <p class="player2 hide">Player 2</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
